@@ -6,4 +6,6 @@ body {
 canvas {
   display:block;
   background:#000;
+  background-image: url('../images/Wasteland.jpg');
+  background-size: cover;
 }
