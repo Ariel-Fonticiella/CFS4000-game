@@ -7,7 +7,7 @@ var enemyTotal = 8,
     enemy_y = -45,// Positioning of the first enemy.
     enemy_w = 95, // Enemy Width.
     enemy_h = 90, // Enemy Height.
-    speed = 3,    // Speed enemies move at.
+    speed = 4,    // Speed enemies move at.
     randomEnemyImages = ['images/rockoeyes.png', 'images/GoatClosedMouth.png', 'images/Renstimpy.png', 'images/showme.png', 'images/sunscream.png'];
 
 function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
