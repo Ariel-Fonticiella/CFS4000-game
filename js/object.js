@@ -147,7 +147,33 @@ function hitTest() {
 var score = 0;
 var lives = 9;
 
+var toasty = new Audio('Audio/TOASTY.mp3');
+var onFire = new Audio('Audio/ONFIRE.mp3');
+var boom = new Audio('Audio/BOOM.mp3');
+var outstanding = new Audio('Audio/OUTSTANDING.mp3');
+var heatingUp = new Audio('Audio/HEATINGUP.mp3');
+var purple = new Audio('Audio/Purple.mp3');
+
 function scoreTotal() {
+  if(score === 50){
+    boom.play();
+  } else if (score === 100){
+    toasty.play();
+  } else if (score === 300) {
+    toasty.play();
+  } else if (score === 400) {
+    outstanding.play();
+  } else if (score === 500) {
+    heatingUp.play();
+  } else if (score === 600) {
+    heatingUp.play();
+  } else if (score === 700) {
+    onFire.play();
+  } else if (score === 900) {
+    onFire.play();
+  }  else if (score === 1000)
+      purple.play();
+
   ctx.font = 'bold 30px Gloria Hallelujah';
   ctx.fillStyle = '#004696';
   ctx.fillText('Score: ', 1000, 31);
@@ -199,31 +225,36 @@ var alive = true;
 
   function characterCollision() {
 
+
 var character_xw = character.x + character.width,
     character_yh = character.y + character.height;
 
-  // The for loop checks our ship against
-  // every enemy in the enemies array.
+var hit1 = new Audio('Audio/Homer1.mp3');
+var hit2 = new Audio('Audio/Homer2.mp3');
+
 for (var i = 0; i < enemies.length; i++) {
      var singleEnemy = enemies[i];
-
 
   if (character.x > singleEnemy.enemy_x && character.x < singleEnemy.enemy_x +
      singleEnemy.enemy_w && character.y > singleEnemy.enemy_y && character.y <
      singleEnemy.enemy_y + enemy_h) {
-      checkLives();
+       hit1.play();
+       checkLives();
   }
   if (character_xw < singleEnemy.enemy_x + singleEnemy.enemy_w &&
       character_xw > singleEnemy.enemy_x && character.y > singleEnemy.enemy_x &&
       character.y < singleEnemy.enemy_y + enemy_h) {
+        hit2.play();
         checkLives();
   }
   if (character_yh > enemies[i][1] && ship_yh < enemies[i][1] + enemy_h &&
       ship_x > enemies[i][0] && ship_x < enemies[i][0] + enemy_w) {
+        hit1.play();
         checkLives();
   }
   if (character_yh > singleEnemy.enemy_y && character_yh < singleEnemy.enemy_y + enemy_h &&
       character_xw < singleEnemy.enemy_x + enemy_w && character_xw > singleEnemy.enemy_x) {
+        hit2.play();
         checkLives();
   }
 }
