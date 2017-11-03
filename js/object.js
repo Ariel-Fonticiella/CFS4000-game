@@ -8,7 +8,10 @@ var enemyTotal = 8,
     enemy_w = 95, // Enemy Width.
     enemy_h = 90, // Enemy Height.
     speed = 3,    // Speed enemies move at.
-    randomEnemyImages = ['images/rockoeyes.png', 'images/Renstimpy.png', 'images/showme.png', 'images/sunscream.png', 'images/bear.png', 'images/bleeding.png', 'images/bobby.png','images/old.png','images/sabrina.png'];
+    randomEnemyImages = ['images/rockoeyes.png', 'images/Renstimpy.png', 'images/showme.png',
+                         'images/sunscream.png', 'images/bear.png', 'images/bleeding.png',
+                         'images/bobby.png','images/old.png','images/sabrina.png',
+                         'images/morty.png','images/rick.png','images/stimpy.png','images/skipit.png'];
 
 function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
    this.enemy_x = enemy_x;
@@ -179,7 +182,7 @@ function checkLives() {
 function reset() {
   var enemy_reset_x = 50;
   character.x = 590;
-  character.y = 480;
+  character.y = 550;
   character.width = 100;
   character.height = 190;
   for (var i = 0; i < enemies.length; i++) {

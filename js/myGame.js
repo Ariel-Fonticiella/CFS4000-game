@@ -11,7 +11,7 @@ var rightKey = false,
 //Our Character
 var character = {
   x: 590,
-  y: 430,
+  y: 550,
   width: 100,
   height: 190,
 };
