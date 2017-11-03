@@ -7,3 +7,12 @@ $(document).ready(function ($) {
 
     });
 });
+
+var playNow = function() {
+  var audio = new Audio('./Audio/DebbieDebLookoutCut.mp3', 'Audio/DebbieDebLookoutCut.ogg');
+  audio.play();
+};
+
+setTimeout(function() {
+  playNow();
+}, 2100);
