@@ -145,7 +145,7 @@ function hitTest() {
 
 //Score
 var score = 0;
-var lives = 5;
+var lives = 9;
 
 function scoreTotal() {
   ctx.font = 'bold 30px Gloria Hallelujah';
