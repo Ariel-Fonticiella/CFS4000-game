@@ -153,6 +153,8 @@ var boom = new Audio('Audio/BOOM.mp3');
 var outstanding = new Audio('Audio/OUTSTANDING.mp3');
 var heatingUp = new Audio('Audio/HEATINGUP.mp3');
 var purple = new Audio('Audio/Purple.mp3');
+var plums = new Audio('Audio/plums.mp3');
+var watch = new Audio('Audio/watch.mp3');
 
 function scoreTotal() {
   if(score === 50){
@@ -161,18 +163,18 @@ function scoreTotal() {
     toasty.play();
   } else if (score === 300) {
     toasty.play();
-  } else if (score === 400) {
+  } else if (score === 450) {
     outstanding.play();
   } else if (score === 500) {
     heatingUp.play();
   } else if (score === 600) {
-    heatingUp.play();
+    watch.play();
   } else if (score === 700) {
     onFire.play();
   } else if (score === 900) {
-    onFire.play();
+    plums.play();
   }  else if (score === 1000)
-      purple.play();
+    watch.play();
 
   ctx.font = 'bold 30px Gloria Hallelujah';
   ctx.fillStyle = '#004696';
