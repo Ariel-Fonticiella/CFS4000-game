@@ -7,8 +7,8 @@ var enemyTotal = 8,
     enemy_y = -45,// Positioning of the first enemy.
     enemy_w = 95, // Enemy Width.
     enemy_h = 90, // Enemy Height.
-    speed = 4,    // Speed enemies move at.
-    randomEnemyImages = ['images/rockoeyes.png', 'images/GoatClosedMouth.png', 'images/Renstimpy.png', 'images/showme.png', 'images/sunscream.png'];
+    speed = 3,    // Speed enemies move at.
+    randomEnemyImages = ['images/rockoeyes.png', 'images/Renstimpy.png', 'images/showme.png', 'images/sunscream.png', 'images/bear.png', 'images/bleeding.png', 'images/bobby.png','images/old.png','images/sabrina.png'];
 
 function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
    this.enemy_x = enemy_x;
@@ -30,11 +30,9 @@ function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
       var singleEnemy = enemies[i];
       var image = new Image();
       image.src = singleEnemy.randomEnemyImages;
-      // ctx.fillStyle = '#0f0';
-      // ctx.fillRect(singleEnemy.enemy_x, singleEnemy.enemy_y, singleEnemy.enemy_w, singleEnemy.enemy_h);
       ctx.drawImage(image, singleEnemy.enemy_x, singleEnemy.enemy_y, singleEnemy.enemy_w, singleEnemy.enemy_h);
     }
-  } // drawEnemy
+  }
 
   function moveEnemies() {
     for (var i = 0; i < enemies.length; i++) {
@@ -45,7 +43,7 @@ function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
         singleEnemy.enemy_y = -45;
       }
     }
-  } // moveEnemies()
+  }
 
 //Laser Gun
 var laserTotal = 5,
@@ -54,8 +52,6 @@ var laserTotal = 5,
 function drawLaser() {
   if (lasers.length)
     for (var i = 0; i < lasers.length; i++) {
-
-      // ctx.drawImage(laserImage, lasers[i][0],lasers[i][1],lasers[i][2],lasers[i][3]);
       ctx.fillStyle = '#f00';
       ctx.fillRect(lasers[i][0],lasers[i][1],lasers[i][2],lasers[i][3]);
     }
@@ -144,28 +140,6 @@ function hitTest() {
   }
 }
 
-// //Hit Test
-// function hitTest() {
-//   var remove = false;
-//   for (var i = 0; i < lasers.length; i++) {
-//     for (var j = 0; j < enemies.length; j++) {
-//       var singleEnemy = enemies[j];
-//       var singleLaser = lasers[i];
-//       if (singleLaser.laser_y <= (singleEnemy.enemy_y + singleEnemy.enemy_h) && singleLaser.laser_x >=
-//       singleEnemy.enemy_x && singleLaser.laser_x <= (singleEnemy.enemy_x + singleEnemy.enemy_w)) {
-//         remove = true;
-//         enemies.splice(j, 1);
-//         enemies.push(new IndividualEnemy ((Math.random() * 500) + 50, -45, enemy_w, enemy_h, speed));
-//       }
-//     }
-//     if (remove === true) {
-//       lasers.splice(i, 1);
-//       score += 10;
-//       remove = false;
-//     }
-//   }
-// }
-
 //Score
 var score = 0;
 var lives = 5;
@@ -192,39 +166,6 @@ function scoreTotal() {
     window.location.href = './GameOver.html';
  }
 }
-
-// function continueButton(e) {
-//  var cursorPos = getCursorPos(e);
-//  if (cursorPos.x > 590 && cursorPos.x < (width / 2) + 47 && cursorPos.y > (height / 2) + 10 && cursorPos.y < (height / 2) + 50) {
-//    alive = true;
-//    lives = 3;
-//    reset();
-//    canvas.removeEventListener('click', continueButton, false);
-//  }
-// }
-
-//holds the cursors position
-// function cursorPosition(x,y) {
-//   this.x = x;
-//   this.y = y;
-// }
-
-//finds the cursor's position after the mouse is clicked
-// function getCursorPos(e) {
-//   var x;
-//   var y;
-//   if (e.pageX || e.pageY) {
-//     x = e.pageX;
-//     y = e.pageY;
-//   } else {
-//     x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-//     y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-//   }
-//   x -= canvas.offsetLeft;
-//   y -= canvas.offsetTop;
-//   var cursorPos = new cursorPosition(x, y);
-//   return cursorPos;
-// }
 
 function checkLives() {
   lives -= 1;
@@ -292,16 +233,7 @@ for (var i = 0; i < enemies.length; i++) {
 //     // every enemy in the enemies array.
 //   for (var i = 0; i < enemies.length; i++) {
       //  var singleEnemy = enemies[i];
-
-  //      if ((singleEnemy.enemy_x + singleEnemy.enemy_w) >= character.x
-  //          (singleEnemy.enemy_x) <= character.x + character.width &&
-  //          (singleEnemy.enemy_y + singleEnemy.enemy_h) >= character.y &&
-  //          (singleEnemy.enemy_y) <= (character.y + character.height)) {
-  //            alive = false;console.log(alive);
-  //  }
-
  // }
-
   //      if (getBottom(character) >= getTop(singleEnemy) &&
   //          getTop(character) <= getBottom(singleEnemy) &&
   //          getRight(character) >= getLeft(singleEnemy) &&

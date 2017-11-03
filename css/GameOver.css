@@ -14,10 +14,10 @@ body {
 
 
 a {
-    text-decoration: none;
-    outline: none;
-    transition: color .3s, opacity .3s;
-    -webkit-transition: color .3s, opacity .3s;
+  text-decoration: none;
+  outline: none;
+  transition: color .3s, opacity .3s;
+  -webkit-transition: color .3s, opacity .3s;
 }
 
 .gameContent {
@@ -42,8 +42,7 @@ button:hover {
 }
 
 .button-wrapper {
-  -webkit-align-self: flex-end;
-   align-self: flex-end;
+  align-self: flex-end;
   margin-left: 63%;
   margin-top: 25%;
 }
@@ -55,7 +54,6 @@ button {
   overflow: hidden;
   cursor: pointer;
   background-color: #e57e62;
-
   padding: 19px 60px 17px 60px;
   text-transform: uppercase;
   color: #ffffff;
