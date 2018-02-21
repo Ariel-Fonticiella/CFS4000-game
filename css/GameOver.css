@@ -33,7 +33,6 @@ button:hover {
   color: #e57e62;
   align-self: flex-start;
   margin-top: 25%;
-
 }
 
 .game {
@@ -42,7 +41,7 @@ button:hover {
 
 .button-wrapper {
   align-self: flex-end;
-  margin-left: 63%;
+  margin-left: 71%;
   margin-top: 25%;
 }
 
