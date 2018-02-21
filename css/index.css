@@ -45,7 +45,9 @@ canvas {
 #firstFade {
    background-color: #000;
    color: #fff;
+   width: 60%;
    text-align: center;
+   margin-left: 20%;
 }
 
 .fade {
