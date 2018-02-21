@@ -1,13 +1,13 @@
 // Enemy Character
 var enemyShip; // Enemy Ship
 
-var enemyTotal = 8,
+var enemyTotal = 11,
     enemies = [], // Array we’ll store our enemies in.
     enemy_x = 45, // Positioning of the first enemy.
     enemy_y = -45,// Positioning of the first enemy.
     enemy_w = 95, // Enemy Width.
     enemy_h = 90, // Enemy Height.
-    speed = 3,    // Speed enemies move at.
+    speed = 5,    // Speed enemies move at.
     randomEnemyImages =
     ['images/rockoeyes.png',
      'images/Renstimpy.png',
@@ -136,20 +136,20 @@ function scoreTotal() {
 
   ctx.font = 'bold 30px Gloria Hallelujah';
   ctx.fillStyle = '#004696';
-  ctx.fillText('Score: ', 0, 0);
-  ctx.fillText(score, 1100, 31);
-  ctx.fillText('Lives:', 82, 31);
+  ctx.fillText('Score: ', 1490, 31);
+  ctx.fillText(score, 1590, 31);
+  ctx.fillText('Lives: ', 80, 31);
   ctx.fillText(lives, 180, 31);
   if (!gameStarted) {
   ctx.font = 'bold 70px Gloria Hallelujah';
   ctx.fillStyle = '#AF0064';
-  ctx.fillText('SAVE US CAT!', 380, 150);
+  ctx.fillText('SAVE US CAT!', 570, 250);
   ctx.font = 'bold 50px Gloria Hallelujah';
   ctx.fillStyle = '#55237D';
-  ctx.fillText('CLICK ANYWHERE TO PLAY', 300, 250);
+  ctx.fillText('CLICK ANYWHERE TO PLAY', 480, 350);
   ctx.fillStyle = '#D74B32';
-  ctx.fillText('Use arrow keys to move', 355, height / 2 + 15);
-  ctx.fillText('Use the x key to shoot', 365, height / 2 + 95);
+  ctx.fillText('Use arrow keys to move', 515, height / 2 + 15);
+  ctx.fillText('Use the x key to shoot', 525, height / 2 + 95);
 }
   if (!alive) {
     window.location.href = './GameOver.html';

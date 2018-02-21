@@ -19,7 +19,7 @@ body {
 
 .canvas-container {
    position: relative;
-   max-width: 1324px;
+   max-width: 1524px;
    min-width: 320px;
    margin: 0 auto;
 }
@@ -27,7 +27,7 @@ body {
 canvas {
   width: 100%;
   height: auto;
-  /*background-image: url('../images/Wasteland.jpg');*/
+  background-image: url('../images/Wasteland.jpg');
 }
 
 #firstFade {
