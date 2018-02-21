@@ -1,0 +1,63 @@
+body {
+  overflow: hidden;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 1.2;
+  font-size: 40px;
+  font-weight: 400;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+
+a {
+  text-decoration: none;
+  outline: none;
+  transition: color .3s, opacity .3s;
+  -webkit-transition: color .3s, opacity .3s;
+}
+
+.gameContent {
+  position: absolute;
+  width: 100%;
+}
+
+button:hover {
+  background: #04b962;
+  color: #fff;
+}
+
+.gameOver-wrapper {
+  color: #e57e62;
+  align-self: flex-start;
+  margin-top: 25%;
+
+}
+
+.game {
+  display: inline-block;
+}
+
+.button-wrapper {
+  align-self: flex-end;
+  margin-left: 63%;
+  margin-top: 25%;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #e57e62;
+  padding: 19px 60px 17px 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  transition: background 400ms, border 400ms;
+}
