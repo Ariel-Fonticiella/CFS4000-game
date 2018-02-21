@@ -103,8 +103,8 @@ canvas {
 /*=== Page FadeIn Animation===*/
 /*=== Trigger  ===*/
 .animate {
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -119,7 +119,7 @@ animation-delay: 0.1s;
 .two {
 -webkit-animation-delay: 4s;
 -moz-animation-delay: 4s;
-animation-delay: 1s;
+animation-delay: 4.5s;
 }
 
 /*=== Animations start here  ===*/
