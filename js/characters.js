@@ -115,10 +115,12 @@ var purple = new Audio('Audio/Purple.mp3');
 var plums = new Audio('Audio/plums.mp3');
 var watch = new Audio('Audio/watch.mp3');
 
-var playSound = boom.play(); boom.pause(); boom.currentTime = 0;
+var playSound  = boom.play();
+var pauseSound = boom.pause();
+var time       = boom.currentTime = 0;
 function scoreTotal() {
   if(score === 50){
-    return playSound;
+     
   } else if (score === 100){
     toasty.play();
   } else if (score === 300) {
