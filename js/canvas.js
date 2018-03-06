@@ -24,14 +24,3 @@ $("#firstFade").append(function random(){
   return list[result];
 }());
 $("#firstFade").show(0).delay(4400).hide(5);
-
-
-
-// var img = new Image();
-//
-// img.onload = function(){
-//   canvas.width = img.naturalWidth;
-//   canvas.height = img.naturalHeight;
-//   ctx.drawImage(img, 0, 0);
-// };
-// // img.src = './images/Wasteland.jpg';

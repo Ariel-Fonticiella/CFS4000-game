@@ -1,8 +1,8 @@
 // Enemy Character
-var enemyShip; // Enemy Ship
+var enemyShip; // Enemy Avatar
 
 var enemyTotal = 11,
-    enemies = [], // Array we’ll store our enemies in.
+    enemies = [], // Array we will store enemies in.
     enemy_x = 45, // Positioning of the first enemy.
     enemy_y = -45,// Positioning of the first enemy.
     enemy_w = 95, // Enemy Width.
@@ -32,7 +32,7 @@ function IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed) {
    this.randomEnemyImages = randomEnemyImages[Math.floor(Math.random() * randomEnemyImages.length)];
  }
 
-      // We use a for loop to add our enemies to our enemies array.
+      // We use a for loop to add enemies to our enemies array.
      for(var i = 0; i < enemyTotal; i++) {
        enemies.push(new IndividualEnemy(enemy_x, enemy_y, enemy_w, enemy_h, speed));
        enemy_x += enemy_w + 60;
@@ -63,11 +63,12 @@ var laserTotal = 5,
     lasers = [];
 
 function drawLaser() {
-  if (lasers.length)
+  if (lasers.length){
     for (var i = 0; i < lasers.length; i++) {
       ctx.fillStyle = '#f00';
       ctx.fillRect(lasers[i][0],lasers[i][1],lasers[i][2],lasers[i][3]);
     }
+  }
 }
 
 function moveLaser() {
@@ -116,23 +117,23 @@ var watch = new Audio('Audio/watch.mp3');
 
 function scoreTotal() {
   if(score === 50){
-    boom.play();
+    return boom.play();
   } else if (score === 100){
-    toasty.play();
+    return toasty.play();
   } else if (score === 300) {
-    toasty.play();
+    return toasty.play();
   } else if (score === 450) {
-    outstanding.play();
+    return outstanding.play();
   } else if (score === 500) {
-    heatingUp.play();
+    return heatingUp.play();
   } else if (score === 600) {
-    watch.play();
+    return watch.play();
   } else if (score === 700) {
-    onFire.play();
+    return onFire.play();
   } else if (score === 900) {
-    plums.play();
+    return plums.play();
   }  else if (score === 1000)
-    watch.play();
+    return watch.play();
 
   ctx.font = 'bold 30px Gloria Hallelujah';
   ctx.fillStyle = '#004696';
