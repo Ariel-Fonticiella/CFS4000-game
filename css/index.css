@@ -42,7 +42,9 @@ canvas {
     background: #333 url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center
 }
 
-#firstFade {
+
+
+#titleFade, #firstFade  {
    background-color: #000;
    color: #fff;
    width: 60%;

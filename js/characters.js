@@ -118,8 +118,6 @@ var watch = new Audio('Audio/watch.mp3');
 function scoreTotal() {
   if(score === 50){
     boom.play();
-    boom.pause();
-    boom.currentTime = 0;
   } else if (score === 100){
     toasty.play();
   } else if (score === 300) {
