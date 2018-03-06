@@ -115,25 +115,26 @@ var purple = new Audio('Audio/Purple.mp3');
 var plums = new Audio('Audio/plums.mp3');
 var watch = new Audio('Audio/watch.mp3');
 
+var playSound = boom.play(); boom.pause(); boom.currentTime = 0;
 function scoreTotal() {
   if(score === 50){
-    return boom.play();
+    return playSound;
   } else if (score === 100){
-    return toasty.play();
+    toasty.play();
   } else if (score === 300) {
-    return toasty.play();
+    toasty.play();
   } else if (score === 450) {
-    return outstanding.play();
+    outstanding.play();
   } else if (score === 500) {
-    return heatingUp.play();
+    heatingUp.play();
   } else if (score === 600) {
-    return watch.play();
+    watch.play();
   } else if (score === 700) {
-    return onFire.play();
+    onFire.play();
   } else if (score === 900) {
-    return plums.play();
+    plums.play();
   }  else if (score === 1000)
-    return watch.play();
+    watch.play();
 
   ctx.font = 'bold 30px Gloria Hallelujah';
   ctx.fillStyle = '#004696';
