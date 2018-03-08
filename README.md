@@ -19,6 +19,6 @@ Note:</strong> No animals were hurt during the making of this game.
 
 &nbsp;
 
-<a href="https://ariel-fonticiella.github.io/GameProject/"><strong><u>CLICK HERE TO PLAY!</u></strong></a>
+<a href="https://ariel-fonticiella.github.io/CFS4000-game/"><strong><u>CLICK HERE TO PLAY!</u></strong></a>
 
 &nbsp;
