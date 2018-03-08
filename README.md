@@ -1,8 +1,6 @@
 <h2>Context</h2>
-
-<hr />
-
 Cat Fighter Simulator 4000 was the very first project I ever worked on. I completed this game in the span of about 2 weeks while I attended IronHack.
+
 
 <hr />
 
